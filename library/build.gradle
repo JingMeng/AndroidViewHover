@@ -2,12 +2,11 @@ apply plugin: 'com.android.library'
 
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 20
+        minSdk 14
+        targetSdk 34
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
     }
@@ -16,6 +15,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
     lintOptions {
         abortOnError false
@@ -23,10 +23,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:support-v4:20.+"
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.daimajia.easing:library:1.0.0@aar'
-    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:support-v4:20.+"
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.easing:library:1.0.0@aar'
+    implementation 'com.daimajia.androidanimations:library:1.1.2@aar'
 }
 apply from: './gradle-mvn-push.gradle'
+
