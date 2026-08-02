@@ -1,10 +1,10 @@
-﻿package com.daimajia.androidviewhover.demo;
+package com.daimajia.androidviewhover.demo;
 
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,7 +15,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.daimajia.androidviewhover.BlurLayout;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private Context mContext;
     private BlurLayout mSampleLayout, mSampleLayout2, mSampleLayout3, mSampleLayout4;

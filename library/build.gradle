@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 
 
 android {
+    namespace 'com.daimajia.androidanimations.library'
     compileSdk 34
 
     defaultConfig {
@@ -29,5 +30,4 @@ dependencies {
     implementation 'com.daimajia.easing:library:1.0.0@aar'
     implementation 'com.daimajia.androidanimations:library:1.1.2@aar'
 }
-apply from: './gradle-mvn-push.gradle'
 

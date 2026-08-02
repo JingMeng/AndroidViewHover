@@ -1,10 +1,10 @@
 package com.daimajia.androidviewhover.tools;
 import android.graphics.Bitmap;
 import android.content.Context;
-import android.support.v8.renderscript.Allocation;
-import android.support.v8.renderscript.Element;
-import android.support.v8.renderscript.RenderScript;
-import android.support.v8.renderscript.ScriptIntrinsicBlur;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
 
 
 public class Blur {
